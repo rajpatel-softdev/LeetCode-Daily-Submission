@@ -1,3 +1,8 @@
+//LeetCode 382. Linked List Random Node 
+//beginner friendly way
+
+//Date: March-10-2023
+
 #include<iostream>
 using namespace std;
 
@@ -22,6 +27,7 @@ class Solution{
             ListNode* temp = head;
             all_head = head;
 
+            //to find length of LL
             while(temp != NULL){
                 len++;
                 temp = temp->next;
@@ -31,9 +37,11 @@ class Solution{
 
         int getRandom(){
 
-            int rand_num = rand() % len;
+            //finding random number n
+            int rand_num = rand() % len;   //getting it in range of 0 to len-1
             ListNode* randNode = all_head;
 
+            // finding Nth node from LL -> it is random node
             while(rand_num != 0){
                 randNode = randNode->next;
                 rand_num--;
