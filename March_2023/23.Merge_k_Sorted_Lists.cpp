@@ -4,6 +4,7 @@
 // Date: March-12-2023
 
 #include <iostream>
+#include<vector>
 using namespace std;
 
 struct ListNode{
